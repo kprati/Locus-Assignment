@@ -1,0 +1,19 @@
+##Task 2
+---------
+1. Use crontab for scheduling.
+2. Configure cron job tio run at 4 am everyday as below:
+  
+   crontab -e 0 4 * * * /path/to/jre/bin/java -jar /path/to/my.jar > /dev/null 2>&1.
+
+3. Use the below One call weather API 
+
+ https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=current,minutely,daily,alerts &appid={API key}
+
+4. Get the API key from openweatherapi.org
+5. Iterate over the hourly section in the Json response, check the date parameter if it lies between the given window (6AM-6PM)
+   using UTC timestamp. #Add java function to check timestamp
+6. If the hourly forecast has pressure less than threshold (995M), set the alert flag as True.
+7. If the alert flag is True, send an email using email service with the relevant alert message.
+
+
+
