@@ -1,0 +1,33 @@
+{
+  "homebaseId": "homebaseId1",
+  "teamId": "teamId1",
+  "taskDate": "2021-08-14",
+  "inputTask": [{
+    "taskId": "taskId1",
+    "taskPriority": 1,
+    "taskType": "PICKUP",
+    "slot": {
+      "start": "2021-08-14T06:00:00Z+05:30",
+      "end": "2021-08-14T18:00:00Z+05:30"
+    },
+    "transactionDuration": 120,
+    "volume": {
+      "value": "2",
+      "unit": "ITEM_COUNT"
+    }
+  },
+    {
+    "taskId": "taskId2",
+    "taskPriority": 2,
+    "taskType": "DROP",
+    "slot": {
+      "start": "2021-08-14T07:00:00Z+05:30",
+      "end": "2021-08-14T10:00:00Z+05:30"
+    },
+    "transactionDuration": 200,
+    "volume": {
+      "value": "1,1,2",
+      "unit": "LBH_METERS"
+    }
+  }]
+  }
